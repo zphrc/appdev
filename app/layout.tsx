@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -13,7 +14,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <Image
+          src="/home_background.png"
+          alt="Home page background"
+          width={500}
+          height={500}
+          className="absolute top-0 right-0 -z-1 h-screen w-auto object-cover"
+        />
+        {children}
+      </body>
     </html>
   );
 }
