@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useRef, ReactNode } from "react";
+import { useRef } from "react";
 
 function InputGroup({
   label,

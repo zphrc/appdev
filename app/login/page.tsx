@@ -29,7 +29,8 @@ export default function Login() {
         <div className="text-center uppercase">or</div>
         <LoginForm /> {/* This is a Client Component */}
         <div className="text-center">
-          Don't have an account? <span className="text-blue-400">Sign up</span>!
+          Don&apos;t have an account?{" "}
+          <span className="text-blue-400">Sign up</span>!
         </div>
       </div>
     </div>
