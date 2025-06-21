@@ -30,7 +30,10 @@ export default function Login() {
         <LoginForm /> {/* This is a Client Component */}
         <div className="text-center">
           Don&apos;t have an account?{" "}
-          <span className="text-blue-400">Sign up</span>!
+          <Link href="" className="text-blue-400">
+            Sign up
+          </Link>
+          !
         </div>
       </div>
     </div>
