@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FcGoogle } from "react-icons/fc";
 import LoginForm from "./LoginForm";
 
 export default function Login() {
@@ -24,6 +25,7 @@ export default function Login() {
           href=""
           className="rounded-md border-2 py-2 text-center text-lg font-bold"
         >
+          <FcGoogle className="mr-2 inline-block" />
           Continue with Google
         </Link>
         <div className="text-center uppercase">or</div>
