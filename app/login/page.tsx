@@ -6,11 +6,11 @@ export default function Login() {
   return (
     <div className="flex h-[80vh] w-full justify-center px-10">
       <div className="grid w-[90vw] grid-cols-2 items-center gap-6 border-2 bg-black p-10">
-        <div>
+        <div className="m-15">
           <div className="mb-3 text-3xl font-bold">Welcome back!</div>
           <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         </div>
-        <div>
+        <div className="flex flex-col justify-center gap-4">
           <h2 className="mb-3 text-3xl font-bold">Login</h2>
           <Link
             href=""
