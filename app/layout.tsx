@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <nav className="m-7 flex justify-around">
+        <nav className="m-7 flex flex-wrap justify-around">
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/favicon.ico"
@@ -27,7 +27,7 @@ export default function RootLayout({
             />
             <span className="text-3xl font-bold">DevMate</span>
           </Link>
-          <div className="flex items-center gap-10 *:font-bold">
+          <div className="flex flex-wrap items-center gap-10 *:font-bold">
             <Link href="/" className="capitalize">
               home
             </Link>
