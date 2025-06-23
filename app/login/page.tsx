@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
-import LoginForm from "./LoginForm";
+import FormInput from "@/ui/FormInput";
 
 export default function Login() {
   return (
@@ -18,7 +18,24 @@ export default function Login() {
           Continue with Google
         </Link>
         <div className="text-center font-light uppercase">or</div>
-        <LoginForm />
+        <form className="flex flex-col gap-4">
+          <FormInput label="Email" name="email" type="text" />
+          <FormInput label="Password" name="password" type="password" />
+          <div className="flex justify-end">
+            <Link
+              href="/forgot-password"
+              className="text-sm text-blue-400 hover:underline"
+            >
+              Forgot Password?
+            </Link>
+          </div>
+          <button
+            type="submit"
+            className="w-full rounded-md bg-white py-2 text-xl font-bold text-black active:bg-gray-400"
+          >
+            Login
+          </button>
+        </form>
         <div className="text-center">
           Don&apos;t have an account?{" "}
           <Link href="/sign-up" className="text-blue-400">
