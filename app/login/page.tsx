@@ -31,7 +31,7 @@ export default function Login() {
           </div>
           <button
             type="submit"
-            className="w-full rounded-md bg-white py-2 text-xl font-bold text-black active:bg-gray-400"
+            className="w-full cursor-pointer rounded-md bg-white py-2 text-xl font-bold text-black active:bg-gray-400"
           >
             Login
           </button>
