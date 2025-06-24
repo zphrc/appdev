@@ -14,7 +14,7 @@ export default function FormInput({
     useRef<HTMLInputElement>(null);
   return (
     <div
-      className="cursor-text rounded-md border-1 px-5 py-3"
+      className="cursor-text rounded-md border px-5 py-3"
       onClick={() => inputRef.current && inputRef.current.focus()}
     >
       <label htmlFor={name} className="cursor-text opacity-60">
