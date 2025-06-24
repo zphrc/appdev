@@ -38,7 +38,7 @@ export default function SignUp() {
           </button>
         </form>
         <div className="text-center">
-          Already have an acccount?{" "}
+          Already have an account?{" "}
           <Link href="/login" className="text-blue-400">
             Sign in
           </Link>
