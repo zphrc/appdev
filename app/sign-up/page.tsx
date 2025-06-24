@@ -19,7 +19,7 @@ export default function SignUp() {
         </Link>
         <div className="text-center font-light uppercase">or</div>
         <form className="flex flex-col gap-4">
-          <div className="flex gap-4">
+          <div className="flex gap-4 *:w-full">
             <FormInput label="First Name" name="firstName" type="text" />
             <FormInput label="Last Name" name="lastName" type="text" />
           </div>
