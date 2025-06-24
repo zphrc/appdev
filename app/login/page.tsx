@@ -1,35 +1,41 @@
-import Image from "next/image";
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
-import LoginForm from "./LoginForm";
+import FormInput from "@/ui/FormInput";
 
 export default function Login() {
   return (
-    <div className="h-screen w-[50vw] bg-black p-10">
-      <div className="flex items-center gap-2 text-white">
-        <Image
-          src="/favicon.ico"
-          alt="Logo"
-          width={50}
-          height={50}
-          className="mb-1 w-5"
-        />
-        <div className="text-xl font-bold">DevMate</div>
-      </div>
-      <div className="flex flex-col gap-6 p-10">
+    <div className="mb-10 flex justify-center">
+      <div className="justify-content flex w-[40vw] flex-col gap-6 border-1 bg-black p-20">
         <div>
-          <div className="mb-3 text-3xl font-bold">Welcome back!</div>
+          <h1 className="mb-3 text-3xl font-bold">Welcome back!</h1>
           <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         </div>
         <Link
           href=""
-          className="rounded-md border-2 py-2 text-center text-lg font-bold"
+          className="block w-full rounded-md border-2 py-2 text-center text-lg font-bold"
         >
           <FcGoogle className="mr-2 inline-block" />
           Continue with Google
         </Link>
-        <div className="text-center uppercase">or</div>
-        <LoginForm /> {/* This is a Client Component */}
+        <div className="text-center font-light uppercase">or</div>
+        <form className="flex flex-col gap-4">
+          <FormInput label="Email" name="email" type="text" />
+          <FormInput label="Password" name="password" type="password" />
+          <div className="flex justify-end">
+            <Link
+              href="/forgot-password"
+              className="text-sm text-blue-400 hover:underline"
+            >
+              Forgot Password?
+            </Link>
+          </div>
+          <button
+            type="submit"
+            className="w-full cursor-pointer rounded-md bg-white py-2 text-xl font-bold text-black active:bg-gray-400"
+          >
+            Login
+          </button>
+        </form>
         <div className="text-center">
           Don&apos;t have an account?{" "}
           <Link href="/sign-up" className="text-blue-400">

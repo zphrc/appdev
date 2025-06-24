@@ -10,7 +10,7 @@ export default function Home() {
         </div>
         <div>
           <Link
-            href=""
+            href="/sign-up"
             className="rounded-md bg-white px-13 py-4 text-xl font-bold text-black"
           >
             Get Started
